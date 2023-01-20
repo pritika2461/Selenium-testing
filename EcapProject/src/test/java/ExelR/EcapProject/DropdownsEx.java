@@ -11,7 +11,7 @@ public class DropdownsEx
       public static void main(String[] args)
       {
     	  WebDriver driver = new ChromeDriver();
-    	  driver.get(null);
+    	  driver.get("");
     	  
     	  WebElement demp = driver.findElement(By.id(""));
     	  Select dropdownemp = new Select(demp);
