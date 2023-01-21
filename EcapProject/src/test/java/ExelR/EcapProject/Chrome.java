@@ -27,10 +27,7 @@ public class Chrome
 	   //driver.getURL()
 	   String url = driver.getCurrentUrl();
 	   System.out.println(url);
-	   
-	   
-	   //driver.close()
-	   
+	  
 	   //driver.close();
 	   //driver.quit();
 	   

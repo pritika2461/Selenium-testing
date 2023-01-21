@@ -8,9 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AlertsEx {
 
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args) throws InterruptedException
+	{
+		
+            //WebDriverManager.chromedriver().setup();
 	        WebDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			
@@ -27,6 +28,7 @@ public class AlertsEx {
 			
 			WebElement confirmalert = driver.findElement(By.xpath("//button[@id='confirmButton']"));
 			confirmalert.click();
+			
 			
 			Alert alt1 = driver.switchTo().alert();
 			alt1.dismiss();

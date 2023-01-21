@@ -1,7 +1,11 @@
 package ExelR.EcapProject;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LocatorsEx
@@ -10,17 +14,20 @@ public class LocatorsEx
 	{
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://www.google.com");
+		driver.get("https://jqueryui.com/checkboxradio/");
 		
 		driver.manage().window().maximize();
 		
-		// find by class name
-		//driver.findElement(By.className("M6CB1c rr4y5c")).click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
-		// find by tagname
-		driver.findElement(By.tagName("img")).click();
+		WebElement frame = driver.findElement(By.xpath("//*[@id\"content\"]/iframe"));
+		driver.switchTo().frame(frame);
 		
-		//driver.findElement(By.cssSelector("input .btnK")).sendKeys("abc");
+		//List<WebElement> checkboxes = driver.findElement(By.xpath("//span[@class='ui-checkbox']"));
+		//int size = checkboxs.size();
+		
+		
+		
 	}
 
 }
