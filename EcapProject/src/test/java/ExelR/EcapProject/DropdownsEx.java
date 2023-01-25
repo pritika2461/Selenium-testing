@@ -11,15 +11,15 @@ public class DropdownsEx
       public static void main(String[] args)
       {
     	  WebDriver driver = new ChromeDriver();
-    	  driver.get("");
+    	  driver.get("https://www.orangehrm.com/contact-sales/");
     	  
-    	  WebElement demp = driver.findElement(By.id(""));
+    	  WebElement demp = driver.findElement(By.id("Form_getForm_Country"));
     	  Select dropdownemp = new Select(demp);
     	  
-    	  dropdownemp.selectByIndex(11-20);
+    	  dropdownemp.selectByIndex(1);
     	  
-    	  //dropdownemp.selectByValue("");
+    	  //dropdownemp.selectByValue("Andorra");
     	  
-    	  //dropdownemp.selectByVisibleText("");
+    	  //dropdownemp.selectByVisibleText("Andorra");
       }
 }
